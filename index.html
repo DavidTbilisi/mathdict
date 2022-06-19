@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მოკლე ქართულ-ინგლისური მათემატიკური ლექსიკონი</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <table id="table_id" class="display">
+            <thead>
+                <tr>
+                    <th>ქართული</th>
+                    <th>ინგლისური</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+<script>
+
+
+let data = [
+    ["წარმოებული", "Derivative"],
+    ["წილადი", "Fraction"],
+    ["წიბო", "Edge"],
+    ["წვეროები", "Vertex, Apex"],
+    ["წახნაგი", "Face"],
+    ["აფსოლუტური მნიშვნელობა", "Absolute Value"],
+    ["ნაზარდი", "Increment"],
+    ["წრფივი ალგებრა", "Linear Algebra"],
+    ["დიფერენციალური განტოლება", "Differential equation"],
+]
+
+
+data.forEach(a => {
+    $("tbody").append(`
+            <tr>
+                <td>${a[0]}</td>
+                <td>${a[1]}</td>
+            </tr>`)
+})
+
+$(document).ready( function () {
+    $('#table_id').DataTable();
+} );
+
+</script>
+
+</body>
+</html>
