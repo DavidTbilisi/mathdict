@@ -1,69 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>მოკლე ქართულ-ინგლისური მათემატიკური ლექსიკონი</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-
-    <!-- https://docs.google.com/spreadsheets/d/e/2PACX-1vRckJuj3ELfU9qKTMUEBGXIAE8QCkqWx0cEHW56LZYA4vxfJUy_4ENSzJwKny9ighh31xqS_Dd5QP8U/pub?gid=1681800063&single=true&output=csv -->
-
-</head>
-<body>
-
-    <div class="container">
-        <table id="table_id" class="display">
-            <thead>
-                <tr>
-                    <th>ქართული</th>
-                    <th>აზერბაიჯანული</th>
-                    <th>თურქული</th>
-                    <th>სომხური</th>
-                    <th>რუსული</th>
-                    <th>ინგლისური</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-    </div>
-
-
-
-<script>
-
-
-
-
-
-// var data = [
-//     ["წარმოებული", "Derivative"],
-//     ["წილადი", "Fraction"],
-//     ["წიბო", "Edge"],
-//     ["წვეროები", "Vertex, Apex"],
-//     ["წახნაგი", "Face"],
-//     ["აფსოლუტური მნიშვნელობა", "Absolute Value"],
-//     ["ნაზარდი", "Increment"],
-//     ["წრფივი ალგებრა", "Linear Algebra"],
-//     ["დიფერენციალური განტოლება", "Differential equation"],
-//     ["თანმიმდევრული ადაპტაცია", "Serial adaptation"],
-//     ["წერტილთა გეომეტრიული ადგილი", "Locus"],
-//     ["წყვეტის ადგილი (წერტილი)","Place of discontinuity"],
-//     ["ასახვა","Mapping"],
-//     ["ათწილადი თანრიგი","Decimal location"],
-//     ["ინტეგრირება","Integration"],
-//     ["ამოზნექილი","Convex"],
-//     ["გარდაქმნა","Transformation"],
-//     ["საკუთრივი ფესვები","Eigenvalue"],
-//     ["შებრუნებული?","Reciprocal"],
-
-// ]
-
-let dataset = [
+[
   {
     "No": 2,
     "En": "abscissa",
@@ -6301,27 +6236,4 @@ let dataset = [
     "Ru": "однородный многочлен",
     "Ar": "միատարր բազմանդամ"
   }
-];
-
-
-dataset.forEach(data => {
-    $("tbody").append(`
-            <tr>
-                <td>${data.Ge}</td>
-                <td>${data.Az}</td>
-                <td>${data.Tr}</td>
-                <td>${data.Ar}</td>
-                <td>${data.Ru}</td>
-                <td>${data.En}</td>
-            </tr>`)
-})
-
-$(document).ready( function () {
-    $('#table_id').DataTable({
-    });
-} );
-
-</script>
-
-</body>
-</html>
+]
